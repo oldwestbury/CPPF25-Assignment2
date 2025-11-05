@@ -28,9 +28,11 @@ struct BMPHeader {
     uint32_t colors_important{0};
 };
 #pragma pack(pop)
+
+// BMP class
 class BMP {
 public:
-    //Create a blank width x height image.
+    //Create a blank  width x height image.
     BMP(int width, int height) : width(width), height(height) {
         row_size = width * 3;  // 3 bytes per pixel
         padded_row_size = (row_size + 3) & ~3; // Align to 4-byte boundary

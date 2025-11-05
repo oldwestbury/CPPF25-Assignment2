@@ -1,6 +1,7 @@
 #include "bmp.hpp"
 #include <iostream>
 #include <time.h>
+// Understand the following function:
 void draw_rectangle(BMP &bmp,int x, int y, int l, int h, int b, color c ){
     for(int i=0;i<=l;i++){
         for(int ii=0;ii<=b;ii++){
@@ -15,6 +16,8 @@ void draw_rectangle(BMP &bmp,int x, int y, int l, int h, int b, color c ){
         }
     }
 }
+// draw  a rectangle with gradient color
+// defined it in any way you prefer.
 
 int main() {
     
